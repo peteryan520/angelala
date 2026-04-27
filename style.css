@@ -87,6 +87,14 @@
   .galleryMain{aspect-ratio:1/1;border-radius:16px}
   .galleryNav{width:36px;height:36px}
   .thumbRow{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+  .productPage{margin:20px auto;padding:0 14px;gap:14px}
+  .productPage .details{padding:18px;border-radius:20px}
+  .productPage .details h1{font-size:24px;line-height:1.25;margin-top:8px}
+  .productPage .price{font-size:22px !important}
+  .productPage .infoGrid{grid-template-columns:1fr;gap:10px;margin:16px 0}
+  .productPage .infoBox{padding:12px}
+  .productPage .note{padding:12px;font-size:14px}
+  .productPage .btn.primary{font-size:15px;padding:12px 16px}
   .details h1{font-size:26px}
   .details{padding:18px}
   .table{font-size:14px}
