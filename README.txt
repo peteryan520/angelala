@@ -1,15 +1,38 @@
-ANGELALA 賣貨便導購版網站 v2
+ANGELALA website
 
-使用方式：
-1. 將整個資料夾內容上傳到 GitHub repository。
-2. 開啟 GitHub Pages，來源選 main branch / root。
-3. 修改 assets/js/data.js：
-   - myshipUrl：換成每個商品的賣貨便商品連結
-   - name / price / colors / sizes / desc：換成真實商品資料
-4. 修改 robots.txt 與 sitemap.xml：
-   - 將 example.com 改成正式網址
-5. 圖片日後建議放外部圖床或 CDN，再把 data.js 裡的圖片網址改為外部圖片連結。
+Upload to GitHub Pages:
+1. Upload the files in this folder as the repository root.
+2. Make sure these files and folders are present on GitHub:
+   - index.html
+   - category.html
+   - product.html
+   - shopping-info.html
+   - faq.html
+   - about.html
+   - weeks.html
+   - 404.html
+   - robots.txt
+   - sitemap.xml
+   - assets/
+3. GitHub Pages settings:
+   - Source: Deploy from a branch
+   - Branch: main
+   - Folder: /root
 
-此版本定位：
-品牌展示 + 商品導購 + 賣貨便下單。
-不包含站內購物車、會員中心、金流或訂單後台。
+Important:
+- Do not upload only HTML files. The assets folder is required.
+- Product data is in assets/js/data.js.
+- Product page behavior is in assets/js/main.js.
+- Site layout and mobile styles are in assets/css/style.css.
+
+Adding or editing a product:
+1. Open assets/js/data.js.
+2. Add or edit one item in PRODUCTS.
+3. Put the MyShip URL in myshipUrl.
+4. Put product photos in assets/img/products/product-id/.
+5. Add image paths to the images array.
+
+Example image paths:
+assets/img/products/p004/01.png
+assets/img/products/p004/02.png
+assets/img/products/p004/03.png
